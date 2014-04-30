@@ -1,0 +1,11 @@
+<div class="jumbotron">
+  <h1>Joel's Angular Labblåda</h1>
+  <p class="lead">
+    <img src="images/HAL_9000.jpg" height="200" alt="HAL 9000"><br>
+  </p>
+</div>
+
+<div id="tree-selection" ng-repeat="level in levels">
+    <select ng-model="level.data" ng-options="o.name for o in level.options" >
+    </select>
+</div>
